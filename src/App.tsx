@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import Main from './components/pages/Main';
+import Product from './components/pages/Product';
 
 class App extends React.Component {
 
@@ -24,6 +25,8 @@ class App extends React.Component {
             <Route path='profile' element={<p>User profile</p>}/>
             <Route path='settings' element={<p>User settings</p>}/>
           </Route>
+          <Route path='/products/:id' element={<Product />}/>
+          <Route path='/' element={<p>Ilyen oldal nincs</p>}/>
         </Routes>
       </main>
     </div>
